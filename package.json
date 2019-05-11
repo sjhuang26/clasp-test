@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@typescript-eslint/typescript-estree": "^1.8.0",
+    "prettier": "^1.17.0"
+  }
+}

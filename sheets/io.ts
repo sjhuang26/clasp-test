@@ -6,13 +6,15 @@ namespace App {
 
     export function createMenus() {
         const ui = SpreadsheetApp.getUi();
-        ui.createMenu('GAS Test')
-            .addItem('First test', 'firstTest')
-            .addItem('Second test', 'secondTest')
+        ui.createMenu("GAS Test")
+            .addItem("First test", "firstTest")
+            .addItem("Second test", "secondTest")
             .addToUi();
     }
 
     export function readDataAsArray(): any[][] {
-        return SpreadsheetApp.getActive().getDataRange().getValues();
+        return SpreadsheetApp.getActive()
+            .getDataRange()
+            .getValues();
     }
 }
